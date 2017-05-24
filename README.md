@@ -14,4 +14,4 @@ Biblioteca de componentes comuns do SPED.
 
 ## Como instalar
 
-    $ pip install python-sped-common
+    $ pip install sped-common
