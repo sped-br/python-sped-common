@@ -11,7 +11,7 @@ deploy:
   provider: pypi
   user: ginx
   password:
-    secure: "TAjKq1M0eWjMq/ZJ2tuBOYbcLY1v0mwKqRUsrpBJUOgam+4YLQhblPcHLZ3yOV5FzqBxHU/WBByZMloW3Cx5+FYL0MRDmktJTqsM0OjdIqmS5m9+yWIQul8nc/54Aa5lMhXgmDHFrqVV+Noe7nYZ//EetN02DHwx7HN/3lva/Is="
+    secure: "io3XUdDCvt3LiG+l6qJCxLVCM4SFEJYqCZ5vbQr4L1XJuWK8aGGAqmIZN9N041A2UocQlMkS+HQ5CnCh4t+15ol+4foKVTuilaMWWUGRKTerwydwmUNFHjwk44Ih9CJ1Td1QC7gw8Lx82TDQAZTdQJ1Le+A5OhXkC9l+81BSA7lyqyHZaIZmfRsCvMp4EexdVwD6G4203qb0KaVosJKqa490S5HeQYPja7IZNUvsCcVc1NYLRMhBJ9RGuyoHSHYfb+8GB1+wmQtDJD2lXOU77gxiS5eyWqzW2ovsJYanVNNj3y21g4nm6dLQH6q0FzDvpflxnWdHYW+LfDMbMwePvO/qmPDL/Fy84L4jNCEIChvv20EfZof9P8nXm7boqKO0OwaGSR+WmzizerIkq5ekmstMSzaZyqIkr9lhT+tbD+U7aJfWP0KtqAHUtfIMmym6Ue4YwhBfsgeDiqA2i91ZWMzEmITQKjeW0o8kaif04D+zKixMHz2RsY+/PAYtcs0ecr7Nqp1rtAuJ/jk37IiXIdvKNrZPTV1eXDd19fKQlmuENeqjPkFqGgn5p1D1VvDMBdxbWAdpHmLTUBxbIXveDIPub68WFRNsr17Sl8a9Ck1/+yiT6K9ukhtSsM9MthKySkfkontgjnaB6AnqCTCzht1197v5SBFXTzWfXrXYxRs="
   distributions: "sdist bdist_wheel"
   on:
     tags: true
