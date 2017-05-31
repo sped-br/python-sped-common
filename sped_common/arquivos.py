@@ -19,6 +19,10 @@ class ArquivoDigital(object):
         self._registro_fechamento = self.registro_fechamento()
         self._blocos = OrderedDict()
 
+    @property
+    def blocos(self):
+        return [bloco for bloco in self._blocos.values() if not bloco.is_empty or bloco.is_obrigatorio]
+
     def readfile(self, filename):
         with open(filename) as spedfile:
             for line in [line.rstrip('\r\n') for line in spedfile]:
@@ -47,8 +51,8 @@ class ArquivoDigital(object):
     def write_to(self, buff):
         buff.write(self._registro_abertura.as_line() + u'\r\n')
         reg_count = 2
-        for key in self._blocos.keys():
-            bloco = self._blocos[key]
+
+        for bloco in self.blocos:
             reg_count += len(bloco.registros)
             for registro in bloco.registros:
                 buff.write(registro.as_line() + u'\r\n')

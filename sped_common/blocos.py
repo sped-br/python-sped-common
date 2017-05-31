@@ -9,6 +9,7 @@ class Bloco(object):
 
     registro_abertura = RegistroIndefinido
     registro_fechamento = RegistroIndefinido
+    bloco_obrigatorio = True
 
     @property
     def abertura(self):
@@ -27,6 +28,14 @@ class Bloco(object):
     @property
     def registros(self):
         return [self.abertura] + self._registros + [self.fechamento]
+
+    @property
+    def is_empty(self):
+        return len(self._registros) == 0
+
+    @property
+    def is_obrigatorio(self):
+        return self.__class__.bloco_obrigatorio
 
     def add(self, registro):
         # Não adiciona o registro de abertura e fechamento
